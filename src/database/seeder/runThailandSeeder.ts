@@ -1,6 +1,7 @@
 // import { createConnection } from 'typeorm'
-// import { CountryRepository, ProvinceRepository, CityRepository } from '../../repositories'
-// import addressJson from '../../assets/ThailandLocation.json'
+// // import { CountryRepository, ProvinceRepository, CityRepository } from '../../country/country/'
+// import { CountryService } from '../../country/country/country.service'
+// import addressJson from '../../utils/ThailandLocation.json'
 
 // class RunThailand {
 //   addresses: []
@@ -25,7 +26,7 @@
 //         country_name_en: 'Thailand'
 //       }
 
-//       const country = new CountryRepository()
+//       const country = new CountryService()
 //       const getCountry = await country.create(countryData)
 //       for (const p in addressJson) {
 //         const provinceNameTH = addressJson[p].PROVINCE_NAME

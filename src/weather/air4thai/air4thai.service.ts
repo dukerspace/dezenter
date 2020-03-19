@@ -1,6 +1,6 @@
-import { Injectable, HttpService } from '@nestjs/common';
+import { Injectable, HttpService } from '@nestjs/common'
 import * as Influx from 'influx'
-import * as moment from 'moment'
+import moment from 'moment'
 import { CronJob } from 'cron'
 import { ProvinceService } from '../../country/province/province.service'
 import { CityService } from '../../country/city/city.service'

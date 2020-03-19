@@ -19,11 +19,9 @@ export class CountryService {
   }
 
   async find(id: number) {
-    return await this.countryRepository.findOne(
-      {
-        id: id
-      }
-    )
+    return await this.countryRepository.findOne({
+      id: id
+    })
   }
 
   async findWithProvince(id: number) {
