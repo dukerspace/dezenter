@@ -1,15 +1,13 @@
 import { BootstrapConsole } from 'nestjs-console'
-import { ConsoleModule } from './console/console.module'
+import { CliModule } from './cli/cli.module'
 
 const bootstrap = new BootstrapConsole({
-  module: ConsoleModule,
+  module: CliModule,
   useDecorators: true
 })
 bootstrap.init().then(async app => {
   try {
-    // init your app
     await app.init()
-    // boot the cli
     await bootstrap.boot()
     process.exit(0)
   } catch (e) {

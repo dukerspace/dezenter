@@ -7,7 +7,7 @@ import { CountryConsoleService } from './country/country.service'
   name: 'seeder',
   description: 'A command to create an item'
 })
-export class ConsoleService {
+export class CliService {
 
   constructor(
     private readonly countryService: CountryConsoleService
