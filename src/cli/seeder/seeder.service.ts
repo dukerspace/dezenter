@@ -21,7 +21,7 @@ export class SeederService {
     command: 'country',
     description: 'Create database country, province, city'
   })
-  async insertCountry() {
+  public async insertCountry() {
     try {
       console.log('start seed country')
       const countryData = {

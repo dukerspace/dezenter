@@ -4,7 +4,7 @@ import * as Influx from 'influx'
 @Injectable()
 export class InfluxService {
   config() {}
-  create(schema, data) {
+  public create(schema, data) {
     try {
       const hostname = process.env.INFLUX_HOST
       const port = Number(process.env.INFLUX_PORT)
@@ -30,5 +30,8 @@ export class InfluxService {
     } catch (e) {
       console.log(e.message)
     }
+  }
+  query() {
+
   }
 }
