@@ -39,7 +39,7 @@ export class Air4thaiService {
   }
   public async handleCron() {
     new CronJob(
-      '*/1 * * * * ',
+      '*/20 * * * *',
       async () => {
         console.log('Fetch data')
         await this.run()
